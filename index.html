@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>РГР IT</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <img class="menu__icon" src="images/sf_minimap_icon.png" alt="">
+                                <a href="#" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <img class="menu__icon" src="images/sf_minimap_icon.png" alt="">
+                                <a href="rules.html" class="menu__link">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <img class="menu__icon" src="images/sf_minimap_icon.png" alt="">
+                                <a href="gameLibrary.html" class="menu__link">Игротека</a>
+                            </li>
+                            <li class="menu__item">
+                                <img class="menu__icon" src="images/sf_minimap_icon.png" alt="">
+                                <a href="join.html" class="menu__link">Принять участие</a>
+                            </li>
+                            <li class="menu__item">
+                                <img class="menu__icon" src="images/sf_minimap_icon.png" alt="">
+                                <a href="about.html" class="menu__link">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__content">
+                    <div class="header__title">
+                        <h1 class="header__title-desc">Турнир 1000-7 по DOTA 2</h1>
+                        <h2 class="header__title-prize">Призовой фонд - Аркана на Techies</h2>
+                    </div>
+                    <button class="header__button join__form-button">Принять участие</button>
+
+                    <div class="header__popup hidden">
+                        <div class="header__popup-closer">
+                            <a class="header__popup-closer-btn" href="#">
+                                <img class="closer-img" src="images/closer_btn.png">
+                            </a>
+                        </div>
+                        <h1 class="header__popup-title">отправить заявку</h1>
+                        <form class="header__popup-form header__join-form" action="">
+                            <input class="popup__form-input-name join__form-input" type="text" placeholder="Имя">
+                            <input class="popup__form-input-steamID join__form-input" type="text"
+                                placeholder="Steam ID">
+                            <button class="popup__form-button join__form-button">выскочить на zxc</button>
+                        </form>
+                    </div>
+
+                    <div class="success__popup hidden">
+                        <div class="success__popup-stroke">
+                            <img class="success__popup-mark" src="images/gal.png" alt="">
+                            <p class="success__popup-text">Заявка успешно отправлена</p>
+                        </div>
+                        <button class="success__popup-btn">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <h1 class="main__title">Хочешь так же?</h1>
+                <img class="main__gif" src="images/alohadance-muscleups.gif" alt="">
+                <h1 class="main__motivation">Тогда брось вызов лучшим</h1>
+                <p class="main__winners">Наши победители</p>
+                <div class="main__bottom">
+                    <div class="main__counter">
+                        <span class="main__counter-winners"></span>
+                        <span class="main__counter-title">Победителей</span>
+                    </div>
+                    <div class="main__slider">
+                        <div class="fotorama slider">
+                            <img src="images/aloha-dance-aloha.gif">
+                            <img src="images/alohadance-clown.gif">
+                            <img src="images/aloha_dance.gif">
+                        </div>
+                    </div>
+                    <div class="main__counter">
+                        <span class="main__counter-prizes"></span>
+                        <span class="main__counter-title">Выиграно</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <div class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-link">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="footer__menu-link">
+                                <a href="rules.html">Правила</a>
+                            </li>
+                            <li class="footer__menu-link">
+                                <a href="gameLibrary.html">Игротека</a>
+                            </li>
+                            <li class="footer__menu-link">
+                                <a href="join.html">Принять участие</a>
+                            </li>
+                            <li class="footer__menu-link">
+                                <a href="about.html">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__center">
+                    <img class="footer__dead-gif" src="images/dead_inside.gif" alt="">
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__logo">
+                        <div class="footer__dota-logo">
+                            <img src="images/image.jpg" alt="" class="dota-logo">
+                        </div>
+                        <div class="footer__steam-logo">
+                            <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank"
+                                class="steam__link">
+                                <img src="images/Steam_Button.png" alt="" class="steam-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+
+
+</html>

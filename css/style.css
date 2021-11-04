@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+a:hover{
+    color: red;
+}
+
+button{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    background-color:#F08531;
+    color: blanchedalmond;
+}
+
+li {
+    list-style: none;
+}
+
+input{
+    outline: none;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+.header {
+    background-image: url(../images/sf1.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.menu__list {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item{
+    display: flex;
+    align-items: center;
+}
+
+.menu__icon{
+    height: 25px;
+}
+
+.header__inner{
+    height: 100vh;
+}
+
+.header__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+.header__title{
+    text-align: center;
+}
+
+.header__title-desc {
+    padding-top: 40px;
+}
+
+.header__title-prize {
+    margin-top: 20px;
+
+}
+
+.popup__title{
+    margin-top: 0;
+}
+
+.header__popup{
+    position: relative;
+    background-image: url(../images/space-bg.jpg);
+    border: 2px red solid;
+    border-radius: 5px;
+    transition: 1s;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 55%; 
+}
+
+.header__popup-closer-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.closer-img{
+    width: 30px;
+}
+
+.header__popup-title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.header__button {
+    text-align: center;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+}
+
+.btn__link {
+    background-color: rgb(54, 31, 14);
+    border: 1px solid blanchedalmond;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0.7;
+    padding: 7px 12px;
+}
+
+.main {
+    background: radial-gradient(ellipse, rgba(97, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 84%);
+    height: 100vh;
+    width: 100%;
+}
+
+.main__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title{
+    padding: 30px;
+}
+
+.main__gif{
+    width: 640px;
+    height: 360px;
+}
+
+.main__motivation{
+    padding: 20px;
+}
+
+.main__winners{
+    padding: 20px;
+}
+
+.main__bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main__counter{
+    margin-top: 30px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main__counter-winners, .main__counter-prizes{
+    font-size: 50px;
+}
+
+.main__counter-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main__slider{
+    width: 300px;
+    height: 150px;
+}
+
+footer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 98%, rgba(99, 1, 1, 1) 100%);
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu {
+    padding: 30px;
+}
+
+.footer__menu-link {
+    padding-top: 10px;
+}
+
+.footer__dead-gif{
+    width: 320px;
+}
+
+.dota-logo, .steam-logo {
+    width: 100px;
+}
+
+/* ------------rules.html------------ */
+
+.header__rules{
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1), 0px 0px 2px rgba(0, 0, 0, 1), 0px 0px 1px rgba(0, 0, 0, 1);    
+    padding: 40px;
+    color:blanchedalmond;
+}
+
+.header__rules-item{
+    font-size: 19px;
+}
+
+/* ------------gameLibrary.html------------ */
+
+.switcher{
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+.switcher__buttons{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.switcher__button{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 25px;
+    font-weight: 700;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px rgb(150, 15, 15) solid;
+    border-radius: 10px;
+    color: gray;
+}
+
+.switcher__heroes{
+    background-color: #F08531;
+}
+
+.switcher__heroes-list, .switcher__items-list{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 200px);
+}
+
+.hero, .item{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__shadow, .item__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hero__info, .item__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: -60px;
+    transform: translateY(50%);
+    transition: 0.3s;
+}
+
+.hero:hover .hero__info, .item:hover .item__info{
+    bottom: 25%;
+}
+
+.hero:hover .hero__shadow, .item:hover .item__shadow{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.agility__img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+.hero__sf{
+    width: 100%;
+}
+
+.item__MoM{
+    width: 200px;
+    height: 113px;
+}
+
+/* ------------join.html------------ */
+
+.header__join-title{
+    text-align: center;
+    padding: 30px;
+    margin-top: 109px;
+}
+
+.header__join-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+}
+
+.join__form-input{
+    width: 500px;
+    padding: 30px;
+    margin: 20px;
+    border: 5px rgb(109, 31, 31) solid;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.join__form-button, .success__popup-btn{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 25px;
+    font-weight: 700;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px rgb(150, 15, 15) solid;
+    border-radius: 10px;
+    color: gray;
+}
+
+.success__popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../images/space-bg.jpg);
+    border: 2px red solid;
+    border-radius: 5px;
+    position: fixed;
+    text-align: center;
+    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 50%;
+}
+
+.success__popup-stroke{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.success__popup-mark{
+    width: 30px;
+}
+
+/* ------------about.html------------ */
+
+.header__about-title{
+    text-align: center;
+    padding: 30px;
+}
+
+.contact__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__title{
+    margin: 5px;
+    font-weight: 700;
+    color: #FDEB70
+}
+
+.send{
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.hidden{   
+    transform: translate(-50%, 2000px);
+}
+
+.invisible{
+    display: none;
+}
