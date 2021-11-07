@@ -1,5 +1,5 @@
 window.onload = function () {
-  document.querySelector(".join__form-button").addEventListener("click", (event) => {
+  document.querySelector(".contact__form-send-btn").addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector(".success__popup").classList.remove("hidden");
     document.body.style.overflowY = "hidden";

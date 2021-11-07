@@ -6,21 +6,30 @@
 
 a {
     text-decoration: none;
-    color: blanchedalmond;
+    color: #FFEBCD;
 }
 
 a:hover{
-    color: red;
+    color: #FF0000;
 }
 
 button{
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    background-color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px #960F0F solid;
+    border-radius: 10px;
+    color: #808080;
 }
 
 button:hover{
     background-color:#F08531;
-    color: blanchedalmond;
+    color: #FFEBCD;
 }
 
 li {
@@ -29,10 +38,15 @@ li {
 
 input{
     outline: none;
+    width: 500px;
+    padding: 30px;
+    margin: 20px;
+    border: 5px #960F0F solid;
+    border-radius: 10px;
+    opacity: 0.9;
 }
 
 body {
-    background-color: rgba(0, 0, 0, .3);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,7 +54,7 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     font-size: 20px;
-    color: blanchedalmond;
+    color: #FFEBCD;
 }
 
 .header {
@@ -93,14 +107,17 @@ body {
 
 }
 
-.popup__title{
-    margin-top: 0;
+.header__button {
+    text-align: center;
+    bottom: 70px;
+    left: 0;
+    right: 0;
 }
 
 .header__popup{
     position: relative;
     background-image: url(../images/space-bg.jpg);
-    border: 2px red solid;
+    border: 2px #960F0F solid;
     border-radius: 5px;
     transition: 1s;
     position: fixed;
@@ -128,22 +145,6 @@ body {
     padding: 30px;
 }
 
-.header__button {
-    text-align: center;
-    bottom: 70px;
-    left: 0;
-    right: 0;
-}
-
-.btn__link {
-    background-color: rgb(54, 31, 14);
-    border: 1px solid blanchedalmond;
-    border-radius: 5px;
-    font-weight: bold;
-    opacity: 0.7;
-    padding: 7px 12px;
-}
-
 .main {
     background: radial-gradient(ellipse, rgba(97, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 84%);
     height: 100vh;
@@ -151,6 +152,12 @@ body {
 }
 
 .main__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__top{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +239,6 @@ footer {
 .header__rules{
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 1), 0px 0px 2px rgba(0, 0, 0, 1), 0px 0px 1px rgba(0, 0, 0, 1);    
     padding: 40px;
-    color:blanchedalmond;
 }
 
 .header__rules-item{
@@ -241,30 +247,10 @@ footer {
 
 /* ------------gameLibrary.html------------ */
 
-.switcher{
-    max-width: 1600px;
-    margin: 0 auto;
-    font-size: 20px;
-    color: blanchedalmond;
-}
-
 .switcher__buttons{
     display: flex;
     justify-content: center;
     margin: 40px 0;
-}
-
-.switcher__button{
-    background-color: black;
-    color: blanchedalmond;
-    font-size: 25px;
-    font-weight: 700;
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-    border: 2px rgb(150, 15, 15) solid;
-    border-radius: 10px;
-    color: gray;
 }
 
 .switcher__heroes{
@@ -322,7 +308,7 @@ footer {
 }
 
 .item__MoM{
-    width: 200px;
+    width: 100%;
     height: 113px;
 }
 
@@ -338,29 +324,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: gray;
-}
-
-.join__form-input{
-    width: 500px;
-    padding: 30px;
-    margin: 20px;
-    border: 5px rgb(109, 31, 31) solid;
-    border-radius: 10px;
-    opacity: 0.9;
-}
-
-.join__form-button, .success__popup-btn{
-    background-color: black;
-    color: blanchedalmond;
-    font-size: 25px;
-    font-weight: 700;
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-    border: 2px rgb(150, 15, 15) solid;
-    border-radius: 10px;
-    color: gray;
+    color: #808080;
 }
 
 .success__popup{
@@ -369,7 +333,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-image: url(../images/space-bg.jpg);
-    border: 2px red solid;
+    border: 2px #960F0F solid;
     border-radius: 5px;
     position: fixed;
     text-align: center;
@@ -413,14 +377,16 @@ footer {
 .info__title{
     margin: 5px;
     font-weight: 700;
-    color: #FDEB70
+    color: #FFEBCD
 }
 
-.send{
+.contact__form-send-btn{
     font-size: 15px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+
+/* ------------visible------------ */
 
 .hidden{   
     transform: translate(-50%, 2000px);

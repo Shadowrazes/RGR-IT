@@ -1,4 +1,4 @@
-window.onload = function (event) {
+window.onload = function () {
   document.querySelector(".join__form-button").addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector(".success__popup").classList.remove("hidden");

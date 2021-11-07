@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>РГР IT</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <img class="menu__icon" src="../images/sf_minimap_icon.png" alt="">
+                <a href="../index.html" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <img class="menu__icon" src="../images/sf_minimap_icon.png" alt="">
+                <a href="rules.html" class="menu__link">Правила</a>
+              </li>
+              <li class="menu__item">
+                <img class="menu__icon" src="../images/sf_minimap_icon.png" alt="">
+                <a href="gameLibrary.html" class="menu__link">Игротека</a>
+              </li>
+              <li class="menu__item">
+                <img class="menu__icon" src="../images/sf_minimap_icon.png" alt="">
+                <a href="join.html" class="menu__link">Принять участие</a>
+              </li>
+              <li class="menu__item">
+                <img class="menu__icon" src="../images/sf_minimap_icon.png" alt="">
+                <a href="#" class="menu__link">О нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__about-content">
+          <div class="contact__info">
+            <div class="contact__info-addres info">
+              <span class="addres-title info__title">Адрес</span>
+              <span class="addres-text info__text">Япония, Токио</span>
+            </div>
+            <div class="contact__info-email info">
+              <span class="email-title info__title">Эл. почта</span>
+              <span class="email-text info__text">hugehug@mail.ru</span>
+            </div>
+            <div class="contact__info-phone info">
+              <span class="phone-title info__title">Номер телефона</span>
+              <span class="phone-text info__text">+7 (924) 478 - 49 - 73</span>
+            </div>
+          </div>
+
+
+          <h1 class="header__about-title">Связаться с вами?</h1>
+          <form class="header__contact-form header__join-form" action="#">
+            <input class="contact__form-input-name" type="text" placeholder="Имя">
+            <input class="contact__form-input-info" type="text" placeholder="E-mail/Номер телефона">
+            <button class="contact__form-send-btn">отправить</button>
+          </form>
+
+          <div class="success__popup hidden">
+            <div class="success__popup-stroke">
+              <img class="success__popup-mark" src="../images/gal.png" alt="">
+              <p class="success__popup-text">Заявка успешно отправлена</p>
+            </div>
+            <button class="success__popup-btn">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <iframe class="map"
+    src="https://yandex.ru/map-widget/v1/?um=constructor%3A028244968c5b03271ff64017cf7781b6fa087fef2299334fc48c8c2e9dc87933&amp;source=constructor"
+    width="100%" height="207" frameborder="0">
+  </iframe>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-link">
+                <a href="../index.html">Главная</a>
+              </li>
+              <li class="footer__menu-link">
+                <a href="rules.html">Правила</a>
+              </li>
+              <li class="footer__menu-link">
+                <a href="gameLibrary.html">Игротека</a>
+              </li>
+              <li class="footer__menu-link">
+                <a href="join.html">Принять участие</a>
+              </li>
+              <li class="footer__menu-link">
+                <a href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__center">
+          <img class="footer__dead-gif" src="../images/dead_inside.gif" alt="">
+        </div>
+
+        <div class="footer__right">
+          <div class="footer__logo">
+            <div class="footer__dota-logo">
+              <img src="../images/image.jpg" alt="" class="dota-logo">
+            </div>
+            <div class="footer__steam-logo">
+              <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" class="steam__link">
+                <img src="../images/Steam_Button.png" alt="" class="steam-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/about.js"></script>
+</body>
+
+
+
+</html>

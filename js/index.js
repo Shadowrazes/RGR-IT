@@ -1,6 +1,4 @@
 window.onload = function () {
-  let p = 0;
-
   document.querySelector(".header__button").addEventListener("click", () => {
     document.querySelector(".header__popup").classList.remove("hidden");
     document.body.style.overflowY = "hidden";
@@ -62,6 +60,7 @@ window.onload = function () {
     else if (window.pageYOffset < 500) {
       scrolled = 0;
       document.querySelector(".main__counter-winners").innerHTML = "";
+      document.querySelector(".main__counter-prizes").innerHTML = "";
     }
   })
 }
